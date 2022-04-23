@@ -4,7 +4,7 @@ game.Players.LocalPlayer.OnTeleport:Connect(function(state)
     end
 end)
 repeat wait() until game:IsLoaded()
-wait(2)
+wait(5)
 game.ReplicatedStorage.Remotes['CommF_']:InvokeServer("SetTeam", "Pirates")
 wait(1)
 spawn(function()
@@ -27,7 +27,7 @@ end
 end)
 
 spawn(function()
-    wait(30)
+    wait(50)
     spawn(function()
     game.Players.LocalPlayer:Kick("We needed to kick u to server hop please wait...")
     end)
